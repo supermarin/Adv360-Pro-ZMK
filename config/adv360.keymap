@@ -48,21 +48,21 @@
     fn {
       display-name = "Fn";
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7         &kp F8         &kp F9       &kp F10         &kp F11         &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans         &trans         &trans       &trans          &trans          &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &msc SCRL_UP    &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &msc SCRL_DOWN  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans                      &mkp LCLK      &mkp MCLK    &mkp RCLK       &trans          &trans
       >;
     };
     mod {
       display-name = "Mod";
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &studio_unlock &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &stp STP_BAT &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &sys_reset                                                                &trans             &none        &none        &none        &none &none &none
+        &none          &none        &none        &none        &none        &none        &bootloader                                                               &bootloader        &none        &none        &none        &none &none &none
+        &studio_unlock &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &stp STP_BAT &none &none        &none        &none &none &none
+        &none          &none        &none        &none        &macro_ver   &none                                      &none &none                                                    &none        &none        &none        &none &none &none
+        &none          &none        &none        &none        &none                                       &none &none &none &none &bl BL_TOG &rgb_ug RGB_TOG                                      &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
     extra1 { 
